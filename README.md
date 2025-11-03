@@ -64,7 +64,3 @@ Este proyecto fue desarrollado como parte del Máster en Desarrollo Full Stack, 
 ## 👨‍💻 Autor
 
 Ignacio Navarro (Ing27Dev)
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
