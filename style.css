@@ -347,7 +347,7 @@ header.header-principal ul {
 
 @media (min-width: 768px) {
   body {
-    background-image: url("../../img/hero-imge.png");
+    background-image: url("./img/hero-imge.png");
     background-repeat: no-repeat;
     background-position: 125% 0;
     background-size: 400px;
