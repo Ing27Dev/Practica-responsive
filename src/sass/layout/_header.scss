@@ -1,0 +1,21 @@
+@use "../abstracts/abstracts" as abs;
+
+header.header-principal {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 38px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul {
+        @include abs.reset-list();
+    }
+    @include abs.breakpoint(tablethorizontal){
+        margin-bottom: 70px;
+        margin-right: 80px;
+        margin-left: 80px;
+        padding-bottom: 40px;
+    }
+}

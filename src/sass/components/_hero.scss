@@ -1,0 +1,135 @@
+@use "../abstracts/abstracts" as abs;
+
+.hero {
+    &__title {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 26px;
+        line-height: 51px;
+        color: abs.$color-dark-blue;
+    }
+    &__subtitle {
+        color: abs.$color-grey;
+        font-size: 16px;
+        margin-bottom: 26px;
+        line-height: 26px;
+        @include abs.breakpoint(tablethorizontal){
+            width:70%;
+        }
+    }
+    &__button {
+        margin-bottom: 46px;
+    }
+    &__img {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+        margin-bottom: 66px;
+        @include abs.breakpoint(tablet){
+            width: 50%;
+            margin: 0;
+        }
+        @include abs.breakpoint(tablethorizontal){
+            height: 500px;
+        }
+        @include abs.breakpoint(desktop){
+            height: 450px;
+        }
+
+    }
+    &__number{
+        position:absolute;
+        display: inline-block;
+        width: max-content;
+        background-color: white;
+        color: black;
+        padding: 5px;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+        border-radius: 1rem;
+        box-shadow: 0px 5px 15px abs.$color-shadow;
+        span {
+            display: block;
+        }
+
+        &__title {
+            font-size: 14px;
+            color: abs.$color-grey;
+        }
+        &__number {
+            font-size: 32px;
+            font-weight: bold;
+            color: black;
+        }
+        &-1 {
+           padding: 16px 20px 16px 20px;
+           top: 0;
+           right: 0;
+           @include abs.breakpoint(tablet){
+                top: -5px
+            }
+            @include abs.breakpoint(tablethorizontal){
+                top: 30px;
+                right: 70px;
+                padding: 16px 40px 16px 20px;
+            }
+            @include abs.breakpoint(desktop){
+                right: 40px;
+            }
+            @include abs.breakpoint(desktopxxl){
+                right: -600px;
+            }
+        }
+        &-2 {
+            padding: 16px 45px 16px 20px;
+            bottom: 0;
+            left: 0;
+            @include abs.breakpoint(tablet){
+                bottom: -70px;
+                left: 70px;
+            }
+            @include abs.breakpoint(tablethorizontal){
+                left: -10px;
+                bottom: 150px;
+            }
+            @include abs.breakpoint(desktop){
+                left: 70px;
+            }
+            @include abs.breakpoint(desktopxxl){
+                left: 750px;
+                bottom: 80px;
+            }
+        }
+    }
+
+    &__img-movil {
+        @include abs.breakpoint(tablet){
+            display: none;
+        }  
+    }
+    .container {
+        @include abs.breakpoint(tablet){
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 100px;
+        }
+        @include abs.breakpoint(tablethorizontal){
+            padding-bottom: 0;
+            margin-left: 80px;
+        }    
+        
+    }
+    &__content {
+        @include abs.breakpoint(tablet){
+            width: 50%;
+        }
+        @include abs.breakpoint(tablethorizontal){
+            width:50%;
+        }
+        @include abs.breakpoint(desktop){
+            max-width:550px;
+        }
+    }
+} 

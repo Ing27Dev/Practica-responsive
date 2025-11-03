@@ -1,0 +1,85 @@
+@use "../abstracts/abstracts" as abs;
+
+.activities {
+    background-image: abs.$color-gradient3;
+    padding-bottom: 80px;
+    @include abs.breakpoint(tablet){
+        padding-top: 90px;
+    }
+    @include abs.breakpoint(tablethorizontal){
+        padding-top: 20px;
+    }
+    @include abs.breakpoint(desktop){
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    @include abs.breakpoint(desktopxxl){
+        padding: 20px;
+    }
+   
+    &__header {
+        background-image: abs.$color-gradient1;
+        color: white;
+        border-radius: 1rem;
+        padding: 24px 32px ;
+        margin-bottom: 60px;
+        @include abs.breakpoint(tablet){
+            margin-bottom: 0;
+            padding: 56px 51px;
+        }
+        
+    }
+
+    &__item {
+        position: relative;
+        padding: 56px 28px 40px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        background-color: white;
+        @include abs.breakpoint(tablet){
+            margin-bottom: 0;
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-icon {
+            position: absolute;
+            top: -28px; 
+            left: 28px; 
+            width: 56px;
+            height: 56px;
+            background: abs.$color-gradient1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        &__title {
+            color: abs.$color-dark-blue;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        &__description {
+            color: abs.$color-grey;
+            font-size: 16px;
+            margin-bottom: 24px;
+            line-height: 26px;
+        }
+    }
+
+    .container {
+        @include abs.breakpoint(tablet){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px 11px;
+        }
+        @include abs.breakpoint(tablethorizontal){
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 56px 32px;
+        }
+       
+          
+        
+    }
+}

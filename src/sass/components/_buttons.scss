@@ -1,0 +1,17 @@
+@use "../abstracts/abstracts" as abs;
+
+.button {
+    @include abs.button();
+}
+
+.button--gradient-light {
+    @include abs.button--gradient_ligth();
+}
+
+.button--gradient-dark {
+    @include abs.button--gradient_dark();
+}
+
+.button-link {
+    @include abs.button-link();
+}

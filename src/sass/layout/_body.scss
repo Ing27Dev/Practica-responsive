@@ -1,0 +1,22 @@
+@use "../abstracts/abstracts" as abs;
+
+body {
+    @include abs.breakpoint(tablet){
+        background-image: url('../../img/hero-imge.png');
+        background-repeat: no-repeat;
+        background-position: 125% 0;
+        background-size: 400px;
+    } 
+    
+    @include abs.breakpoint(tablethorizontal){
+        background-position: 100% 0;
+        background-size: 450px;
+    }
+
+    @include abs.breakpoint(desktop){
+        background-position: 100% -10px;
+        background-size: 450px;
+    }
+   
+        
+}

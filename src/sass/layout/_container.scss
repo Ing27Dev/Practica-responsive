@@ -1,0 +1,16 @@
+@use "../abstracts/abstracts" as abs;
+
+.container {
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @include abs.breakpoint(tablethorizontal){
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+        
+}
